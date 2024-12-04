@@ -35,7 +35,7 @@ Demos are available here:
 
 ---
 
-![](./face/images/screenshot.png)
+![](./face/images/screenshot.jpg)
 
 ---
 
