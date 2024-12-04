@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Tracker - Accelerometer</title>
+    <link rel="icon" href="./images/favicon.png" />
+    <link href="./style.css" rel="stylesheet" />
+    <meta
+      name="description"
+      content="An experiment with parallax element scrolling and an accelerometer"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      property="og:url"
+      content="https://orangespaceman.github.io/parallax-tracker/accel/"
+    />
+    <meta property="og:title" content="Parallax Tracker - Accelerometer" />
+    <meta
+      property="og:description"
+      content="An experiment with parallax element scrolling and an accelerometer"
+    />
+    <meta
+      property="og:image"
+      content="https://orangespaceman.github.io/parallax-tracker/accel/images/favicon.png"
+    />
+
+    <meta name="theme-color" content="#6cb4ee" />
+  </head>
+  <body>
+    <button class="start">Tap to start</button>
+    <div class="layers">
+      <div class="layer layer--plant" data-parallax="-0.5"></div>
+      <div class="layer layer--tree" data-parallax="-0.1"></div>
+      <div class="layer layer--bear" data-parallax="0.1"></div>
+      <div class="layer layer--ground" data-parallax="0.1"></div>
+      <div class="layer layer--mountains-front" data-parallax="0.5"></div>
+      <div class="layer layer--mountains-back" data-parallax="1"></div>
+      <div class="layer layer--big-cloud" data-parallax="0"></div>
+      <div class="layer layer--small-cloud" data-parallax="0"></div>
+    </div>
+
+    <button id="debug-toggle">Debug</button>
+    <div id="debug-panel">
+      <video id="debug-video" autoplay muted playsinline></video>
+      <canvas id="debug-overlay"></canvas>
+      <div id="debug-values"></div>
+    </div>
+
+    <script type="module" src="js/init.js"></script>
+  </body>
+</html>
